@@ -1,12 +1,11 @@
 import './App.css'
-import Header from "./components/Header";
+import AddTask from "./TaskManagement/AddTask";
 
 function App() {
   return (
-    <>
-      Hello CI90
-      <Header/>
-    </>  
+    <div className={bg-white}>
+      <AddTask/>
+    <div/>  
   );
 }
 
