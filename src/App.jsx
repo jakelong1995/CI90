@@ -1,10 +1,10 @@
 import './App.css'
-import AddTask from "./TaskManagement/AddTask";
+import Form from "./components/Form";
 
 function App() {
   return (
     <>
-      <AddTask/>
+      <Form/>
     </>  
   )
 }
