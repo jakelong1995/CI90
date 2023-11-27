@@ -1,12 +1,10 @@
-import './App.css'
-import Form from "./components/Form";
+import React from 'react'
+import Appcontainer from './BigAssignment/Appcontainer'
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Form/>
-    </>  
+    <Appcontainer/>
   )
 }
 
-export default App;
+export default App
