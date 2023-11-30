@@ -28,8 +28,8 @@ export default function AddForm() {
   };
 
   return (
-    <div className='addForm'>
-      <div className='p-6 bg-gray-100 rounded-md'>
+    <div className='flex items-center justify-center h-screen'>
+      <div className='p-6 bg-gray-100 rounded-md w-96 flex justify-center items-center'>
         {!isAdded ? (
           <button
             className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
