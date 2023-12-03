@@ -1,15 +1,13 @@
 import React from 'react'
+import ShoppingListItem from './ShoppingListItem'
 
 function ShoppingList({items}) {
   return (
     <ul>
         {items.map(i =>(
-            <li key={i.id}
-            style={{
-                color: i.completed ? 'gray' : 'blue',
-                textDecoration: i.completed ? 'line-through' : 'none'}}>
-                {i.name} - {i.quantity}
-            </li>
+            <ShoppingListItem
+            key = {i.id} {...i}
+            />
         ))}
     </ul>
   )
