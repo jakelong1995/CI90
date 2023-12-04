@@ -8,8 +8,7 @@ const App = () => {
   return (
     // <Appcontainer/>
     // <Slots val1='7️⃣' val2='7️⃣' val3='7️⃣'/>
-    // <ShoppingListApp/>
-    <div>hello</div>
+    <ShoppingListApp/>
   )
 }
 
