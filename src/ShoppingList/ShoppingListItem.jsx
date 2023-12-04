@@ -13,14 +13,3 @@ function ShoppingListItem({name,quantity,completed}) {
 }
 
 export default ShoppingListItem
-
-{/* <ul>
-        {items.map(i =>(
-            <li key={i.id}
-            style={{
-                color: i.completed ? 'gray' : 'blue',
-                textDecoration: i.completed ? 'line-through' : 'none'}}>
-                {i.name} - {i.quantity}
-            </li>
-        ))}
-    </ul> */}
