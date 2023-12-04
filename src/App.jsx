@@ -12,9 +12,9 @@ const App = () => {
     {id: 4, name: 'veggie', quantity: 1, completed: false}
   ]
   return (
-    // <Appcontainer/>
+    <Appcontainer/>
     // <Slots val1='7️⃣' val2='7️⃣' val3='7️⃣'/>
-    <ShoppingList items={data}/>
+    // <ShoppingList items={data}/>
   )
 }
 

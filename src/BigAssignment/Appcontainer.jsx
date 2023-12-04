@@ -1,9 +1,19 @@
 import React from 'react'
 import Form from './Form'
-import './index.css'
+
+const [listExpenseInfos, setListExpenseInfos] = useState([]);
+
+  const handleAddExpenseInfo = expenseInfo =>{
+    setListExpenseInfos([...listExpenseInfos, expenseInfo]);
+  }
+
 const Appcontainer = () => {
   return (
-    <Form/>
+
+    <div className="app-container">
+        <AddForm handleAddExpenseInfo={handleAddExpenseInfo}/>
+        <DataGrid listExpenseInfos={listExpenseInfos} />
+    </div>
   )
 }
 
