@@ -8,12 +8,12 @@ import ColorBoxApp from './ColorBox/ColorBoxApp'
 
 const App = () => {
   return (
-    // <Appcontainer/>
+    <Appcontainer/>
     // <Slots val1='7️⃣' val2='7️⃣' val3='7️⃣'/>
     // <ShoppingListApp/>
     // <PropertyApp/>
     // <Clicker message='hello' buttonText='click me'/>
-    <ColorBoxApp/>
+    // <ColorBoxApp/>
   )
 }
 

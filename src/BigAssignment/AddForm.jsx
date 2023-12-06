@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function AddForm() {
+export default function AddForm(props) {
   const initData = { name: '', amount: '', date: '' };
   const [isAdded, setIsAdded] = useState(false);
   const [expenseInfo, setexpenseInfo] = useState(initData);
@@ -11,11 +11,13 @@ export default function AddForm() {
     setexpenseInfo({ ...expenseInfo, [name]: value });
   };
 
-  const handleAdd = () => {
+  const handleAdd = (event) => {
+    event.preventDefault();
     console.log(name);
     if (!name || !amount || !date) {
       alert('Empty fields, please input all the fields!');
     } else {
+      props.handleAddExpenseInfo(expenseInfo);
       setexpenseInfo(initData);
     }
   };

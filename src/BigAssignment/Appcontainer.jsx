@@ -1,13 +1,15 @@
-import React from 'react'
-import Form from './Form'
+import React, {useState} from 'react';
+import AddForm from './AddForm';
+import DataGrid from './DataGrid';
+
+function Appcontainer() {
+  const [listExpenseInfos, setListExpenseInfos] = useState([]);
 
   const handleAddExpenseInfo = expenseInfo =>{
     setListExpenseInfos([...listExpenseInfos, expenseInfo]);
   }
 
-const Appcontainer = () => {
   return (
-
     <div className="app-container">
         <AddForm handleAddExpenseInfo={handleAddExpenseInfo}/>
         <DataGrid listExpenseInfos={listExpenseInfos} />
@@ -15,4 +17,4 @@ const Appcontainer = () => {
   )
 }
 
-export default Appcontainer
+export default Appcontainer;

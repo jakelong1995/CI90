@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function DataGrid(props) {
   return (
-    <Table striped bordered hover>
+    <table>
       <thead>
         <tr>
           <th>#</th>
@@ -12,20 +12,20 @@ function DataGrid(props) {
         </tr>
       </thead>
       <tbody>
-        {
-            props.listExpenseInfos.map((item, index) =>{
-              return (
-                <tr key={item.id}>
-                  <td>{index + 1}</td>
-                  <td>{item.name}</td>
-                  <td>{item.amount}</td>
-                  <td>{item.date}</td>
-                </tr>
-              )
-            })
-        }
+        {props.listExpenseInfos &&
+          props.listExpenseInfos.length > 0 &&
+          props.listExpenseInfos.map((item, index) => {
+            return (
+              <tr key={item.id}>
+                <td>{index + 1}</td>
+                <td>{item.name}</td>
+                <td>{item.amount}</td>
+                <td>{item.date}</td>
+              </tr>
+            );
+          })}
       </tbody>
-    </Table>
+    </table>
   );
 }
 
