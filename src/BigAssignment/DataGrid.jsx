@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 
 function DataGrid(props) {
   return (
-    <table>
+    <div className="p-6 bg-gray-100 rounded-md w-96 flex justify-center items-center">
+      <table className="border-collapse w-full">
       <thead>
         <tr>
           <th>#</th>
@@ -26,6 +27,7 @@ function DataGrid(props) {
           })}
       </tbody>
     </table>
+    </div>
   );
 }
 

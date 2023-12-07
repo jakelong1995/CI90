@@ -10,7 +10,7 @@ function Appcontainer() {
   }
 
   return (
-    <div className="app-container">
+    <div className='flex flex-col gap-4 items-center justify-center h-screen'>
         <AddForm handleAddExpenseInfo={handleAddExpenseInfo}/>
         <DataGrid listExpenseInfos={listExpenseInfos} />
     </div>
