@@ -5,15 +5,17 @@ import ShoppingListApp from './ShoppingList/ShoppingListApp'
 import PropertyApp from './PropertyApp/PropertyApp'
 import Clicker from './Clicker'
 import ColorBoxApp from './ColorBox/ColorBoxApp'
+import GetApi from './lesson/GetApi'
 
 const App = () => {
   return (
-    <Appcontainer/>
+    // <Appcontainer/>
     // <Slots val1='7️⃣' val2='7️⃣' val3='7️⃣'/>
     // <ShoppingListApp/>
     // <PropertyApp/>
     // <Clicker message='hello' buttonText='click me'/>
     // <ColorBoxApp/>
+    <GetApi/>
   )
 }
 
