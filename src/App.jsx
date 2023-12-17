@@ -6,6 +6,7 @@ import PropertyApp from './PropertyApp/PropertyApp'
 import Clicker from './Clicker'
 import ColorBoxApp from './ColorBox/ColorBoxApp'
 import GetApi from './lesson/GetApi'
+import TaskManagement from './TaskManagement'
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
     // <PropertyApp/>
     // <Clicker message='hello' buttonText='click me'/>
     // <ColorBoxApp/>
-    <GetApi/>
+    // <GetApi/>
+    <TaskManagement/>
   )
 }
 
