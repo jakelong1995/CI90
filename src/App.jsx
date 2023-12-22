@@ -7,6 +7,7 @@ import Clicker from './Clicker'
 import ColorBoxApp from './ColorBox/ColorBoxApp'
 import GetApi from './lesson/GetApi'
 import TaskManagement from './TaskManagement'
+import HomePage from './Invi/HomePage'
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
     // <Clicker message='hello' buttonText='click me'/>
     // <ColorBoxApp/>
     // <GetApi/>
-    <TaskManagement/>
+    // <TaskManagement/>
+    <HomePage/>
   )
 }
 
