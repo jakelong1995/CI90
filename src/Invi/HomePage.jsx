@@ -5,7 +5,7 @@ import { Button } from 'antd';
 
 const homepage = () => {
   return (
-    <div>
+    <div className='bg-rose-50'>
         <div className='mx-auto p-4 flex flex-col justify-between h-screen max-w-5xl'>
             
             {/* navbar */}
